@@ -11,7 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
     var anu = 0
-
+    var name = ""
+    
     @IBAction func buttonClicked(_ sender: Any) {
         if anu == 0 {
             mainLabel.text = "wqwqqwq"
@@ -20,13 +21,26 @@ class ViewController: UIViewController {
             mainLabel.text = "hahahaha"
             anu = 0
         }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "firstSegue" {
+            let destination = segue.destination as! SecondViewController
+            destination.parseName = name
+        }
+    }
 
-
+    @IBAction func button2Clicked(_ sender: Any) {
+        name = mainLabel.text ?? ""
+        
+        performSegue(withIdentifier: "firstSegue", sender: nil)
+    }
+    
 }
 
