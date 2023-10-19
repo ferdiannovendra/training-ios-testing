@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     var anu = 0
     var name = ""
     
-    @IBAction func buttonClicked(_ sender: Any) {
+    @IBAction func buttonClicked(_ sender: Any) {            
         if anu == 0 {
             mainLabel.text = "wqwqqwq"
             anu += 1

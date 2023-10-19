@@ -15,8 +15,10 @@ struct Employee: Decodable {
     let nama: String
     let gaji: Int
     let umur: Int
+    let id: Int
     
     enum CodingKeys: String, CodingKey {
+        case id = "id"
         case nama = "employee_name"
         case gaji = "employee_salary"
         case umur = "employee_age"

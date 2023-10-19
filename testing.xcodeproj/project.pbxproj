@@ -26,6 +26,14 @@
 		B258C0C52ADFB85000B8D11D /* TableEmployeesApiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B258C0C32ADFB85000B8D11D /* TableEmployeesApiCell.xib */; };
 		B258C0CB2ADFBAEC00B8D11D /* APIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258C0CA2ADFBAEC00B8D11D /* APIViewController.swift */; };
 		B258C0CD2ADFC17100B8D11D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258C0CC2ADFC17100B8D11D /* Employee.swift */; };
+		B258C0D12AE0D44800B8D11D /* CoreDataCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258C0CF2AE0D44800B8D11D /* CoreDataCellTableViewCell.swift */; };
+		B258C0D22AE0D44800B8D11D /* CoreDataCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B258C0D02AE0D44800B8D11D /* CoreDataCellTableViewCell.xib */; };
+		B258C0D82AE0DA3700B8D11D /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258C0D72AE0DA3700B8D11D /* CoreDataViewController.swift */; };
+		B258C0DB2AE0DA7500B8D11D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B258C0D92AE0DA7500B8D11D /* DataModel.xcdatamodeld */; };
+		B258C0DD2AE0DB0400B8D11D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258C0DC2AE0DB0400B8D11D /* User.swift */; };
+		B258C0E02AE1049300B8D11D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258C0DF2AE1049300B8D11D /* APIService.swift */; };
+		B258C0E32AE107FB00B8D11D /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258C0E22AE107FB00B8D11D /* EmployeeViewModel.swift */; };
+		B258C0E52AE120B000B8D11D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258C0E42AE120B000B8D11D /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +76,14 @@
 		B258C0C32ADFB85000B8D11D /* TableEmployeesApiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableEmployeesApiCell.xib; sourceTree = "<group>"; };
 		B258C0CA2ADFBAEC00B8D11D /* APIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewController.swift; sourceTree = "<group>"; };
 		B258C0CC2ADFC17100B8D11D /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		B258C0CF2AE0D44800B8D11D /* CoreDataCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCellTableViewCell.swift; sourceTree = "<group>"; };
+		B258C0D02AE0D44800B8D11D /* CoreDataCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreDataCellTableViewCell.xib; sourceTree = "<group>"; };
+		B258C0D72AE0DA3700B8D11D /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		B258C0DA2AE0DA7500B8D11D /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		B258C0DC2AE0DB0400B8D11D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B258C0DF2AE1049300B8D11D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B258C0E22AE107FB00B8D11D /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		B258C0E42AE120B000B8D11D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,10 @@
 		B258C0282AD791F300B8D11D = {
 			isa = PBXGroup;
 			children = (
+				B258C0E12AE107DF00B8D11D /* ViewModel */,
+				B258C0DE2AE1046800B8D11D /* APIService */,
+				B258C0D92AE0DA7500B8D11D /* DataModel.xcdatamodeld */,
+				B258C0CE2AE0D42100B8D11D /* CoreDataCell */,
 				B258C0BF2ADFB80C00B8D11D /* TableEmployeesApiCell */,
 				B258C0762ADF7B2E00B8D11D /* Entity */,
 				B258C0712AD93ADA00B8D11D /* TableViewCell */,
@@ -132,6 +152,7 @@
 				B258C03D2AD791F300B8D11D /* testing.xcdatamodeld */,
 				B258C06F2AD9288A00B8D11D /* SecondViewController.swift */,
 				B258C0CA2ADFBAEC00B8D11D /* APIViewController.swift */,
+				B258C0D72AE0DA3700B8D11D /* CoreDataViewController.swift */,
 			);
 			path = testing;
 			sourceTree = "<group>";
@@ -167,6 +188,7 @@
 			children = (
 				B258C0772ADF7B4500B8D11D /* Profile.swift */,
 				B258C0CC2ADFC17100B8D11D /* Employee.swift */,
+				B258C0DC2AE0DB0400B8D11D /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -178,6 +200,32 @@
 				B258C0C32ADFB85000B8D11D /* TableEmployeesApiCell.xib */,
 			);
 			path = TableEmployeesApiCell;
+			sourceTree = "<group>";
+		};
+		B258C0CE2AE0D42100B8D11D /* CoreDataCell */ = {
+			isa = PBXGroup;
+			children = (
+				B258C0CF2AE0D44800B8D11D /* CoreDataCellTableViewCell.swift */,
+				B258C0D02AE0D44800B8D11D /* CoreDataCellTableViewCell.xib */,
+			);
+			path = CoreDataCell;
+			sourceTree = "<group>";
+		};
+		B258C0DE2AE1046800B8D11D /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				B258C0DF2AE1049300B8D11D /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		B258C0E12AE107DF00B8D11D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B258C0E22AE107FB00B8D11D /* EmployeeViewModel.swift */,
+				B258C0E42AE120B000B8D11D /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +342,7 @@
 				B258C0752AD93B2000B8D11D /* ProfileTableViewCell.xib in Resources */,
 				B258C0C52ADFB85000B8D11D /* TableEmployeesApiCell.xib in Resources */,
 				B258C0412AD791F500B8D11D /* Assets.xcassets in Resources */,
+				B258C0D22AE0D44800B8D11D /* CoreDataCellTableViewCell.xib in Resources */,
 				B258C03C2AD791F300B8D11D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,15 +369,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B258C0392AD791F300B8D11D /* ViewController.swift in Sources */,
+				B258C0E02AE1049300B8D11D /* APIService.swift in Sources */,
 				B258C0352AD791F300B8D11D /* AppDelegate.swift in Sources */,
 				B258C03F2AD791F300B8D11D /* testing.xcdatamodeld in Sources */,
 				B258C0CD2ADFC17100B8D11D /* Employee.swift in Sources */,
 				B258C0C42ADFB85000B8D11D /* TableEmployeesApiCell.swift in Sources */,
 				B258C0782ADF7B4500B8D11D /* Profile.swift in Sources */,
+				B258C0DD2AE0DB0400B8D11D /* User.swift in Sources */,
 				B258C0742AD93B2000B8D11D /* ProfileTableViewCell.swift in Sources */,
 				B258C0702AD9288A00B8D11D /* SecondViewController.swift in Sources */,
 				B258C0372AD791F300B8D11D /* SceneDelegate.swift in Sources */,
+				B258C0D82AE0DA3700B8D11D /* CoreDataViewController.swift in Sources */,
+				B258C0DB2AE0DA7500B8D11D /* DataModel.xcdatamodeld in Sources */,
 				B258C0CB2ADFBAEC00B8D11D /* APIViewController.swift in Sources */,
+				B258C0E52AE120B000B8D11D /* UserViewModel.swift in Sources */,
+				B258C0E32AE107FB00B8D11D /* EmployeeViewModel.swift in Sources */,
+				B258C0D12AE0D44800B8D11D /* CoreDataCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +755,16 @@
 			);
 			currentVersion = B258C03E2AD791F300B8D11D /* testing.xcdatamodel */;
 			path = testing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B258C0D92AE0DA7500B8D11D /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B258C0DA2AE0DA7500B8D11D /* DataModel.xcdatamodel */,
+			);
+			currentVersion = B258C0DA2AE0DA7500B8D11D /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
