@@ -80,7 +80,7 @@
                                     <constraint firstAttribute="width" secondItem="j1c-vF-NLH" secondAttribute="height" multiplier="27:7" id="yx9-Es-uQs"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="BUAT API"/>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvX-gF-1Ne"/>
                                     <segue destination="txB-b6-fMp" kind="show" id="T1M-yw-XKy"/>
